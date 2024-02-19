@@ -1,7 +1,7 @@
 const API_KEY = "12deac2c7d7346228a782ab0a8df7f81";
 const apiUrl = "https://newsapi.org/v2/everything?q=";
-const corsAnywhereUrl = "https://chronicle-connect.onrender.com/";     
-const url = ${corsAnywhereUrl}${apiUrl}${query}&pageSize=${10}&apiKey=${API_KEY};
+const corsAnywhereUrl = "https://chronicle-connect.onrender.com/";
+const url = `${corsAnywhereUrl}${apiUrl}${query}&pageSize=${10}&apiKey=${API_KEY}`;
 window.addEventListener("load", () => fetchNews("India"));
 function reload() {
   window.location.reload();
